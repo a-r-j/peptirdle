@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 import { Cell } from "../grid/Cell";
 
 type Props = {
@@ -55,7 +55,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      Guess the WORDLE in 6 tries. After each guess, the color
+                      Guess the PEPTIRDLE in 6 tries. After each guess, the color
                       of the tiles will change to show how close your guess was
                       to the word.
                     </p>
@@ -68,7 +68,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="Y" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter W is in the word and in the correct spot.
+                      The residue W is in the peptide and in the correct spot.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -79,7 +79,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="T" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter L is in the word but in the wrong spot.
+                      The residue L is in the peptide but in the wrong spot.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
@@ -90,7 +90,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                       <Cell value="E" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The letter U is not in the word in any spot.
+                      The residue U is not in the peptide in any spot.
                     </p>
                   </div>
                 </div>
