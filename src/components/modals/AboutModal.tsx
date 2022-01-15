@@ -1,5 +1,5 @@
-import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
 
 type Props = {
   isOpen: boolean;
@@ -54,7 +54,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                   </Dialog.Title>
                   <div className="mt-2">
                     <p className="text-sm text-gray-500">
-                      This is an open source clone of the game Wordle -{" "}
+                      This is a protein enthusiast fork of an open source clone of the game Wordle -{" "}
                       <a
                         href="https://github.com/hannahcode/wordle"
                         className="underline font-bold"
@@ -66,8 +66,10 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
                         href="https://www.powerlanguage.co.uk/wordle/"
                         className="underline font-bold"
                       >
-                        play the original here
+                        play the original here.
                       </a>
+                      <br></br>
+                      All possible 5-mers starting with "M" were generated. 2000 of these are randomly selected as target peptides.
                     </p>
                   </div>
                 </div>

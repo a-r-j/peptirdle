@@ -1,16 +1,16 @@
 import { InformationCircleIcon } from "@heroicons/react/outline";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Alert } from "./components/alerts/Alert";
 import { Grid } from "./components/grid/Grid";
 import { Keyboard } from "./components/keyboard/Keyboard";
 import { AboutModal } from "./components/modals/AboutModal";
 import { InfoModal } from "./components/modals/InfoModal";
 import { WinModal } from "./components/modals/WinModal";
-import { isWordInWordList, isWinningWord, solution } from "./lib/words";
 import {
   loadGameStateFromLocalStorage,
-  saveGameStateToLocalStorage,
+  saveGameStateToLocalStorage
 } from "./lib/localStorage";
+import { isWinningWord, isWordInWordList, solution } from "./lib/words";
 
 function App() {
   const [guesses, setGuesses] = useState<string[]>(
@@ -85,12 +85,15 @@ function App() {
         variant="success"
       />
       <div className="flex w-80 mx-auto items-center mb-8">
-        <h1 className="text-xl grow font-bold">Not Wordle</h1>
+        <h1 className="text-xl grow font-bold">Peptirdle</h1>
+
         <InformationCircleIcon
           className="h-6 w-6 cursor-pointer"
           onClick={() => setIsInfoModalOpen(true)}
         />
       </div>
+      <div className="flex w-80 mx-auto items-center mb-8"><h3>All possible 5-mers starting with "M" were generated. 2000 of these are randomly selected as target peptides</h3></div>
+
       <Grid guesses={guesses} currentGuess={currentGuess} />
       <Keyboard
         onChar={onChar}
