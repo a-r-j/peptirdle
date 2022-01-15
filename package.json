@@ -1,7 +1,7 @@
 {
   "name": "peptirdle",
   "version": "0.1.0",
-  "homepage": "https://www.jamasb.io/peptirdle",
+  "homepage": "http://a-r-j.github.io/peptirdle",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.4.2",
