@@ -61,21 +61,21 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="W" status="correct" />
+                      <Cell value="M" />
                       <Cell value="E" />
-                      <Cell value="A" />
+                      <Cell value="A" status="correct" />
                       <Cell value="R" />
                       <Cell value="Y" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The residue W is in the peptide and in the correct spot.
+                      The residue A is in the peptide and in the correct spot.
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="P" />
+                      <Cell value="M" />
                       <Cell value="I" />
                       <Cell value="L" status="present" />
-                      <Cell value="O" />
+                      <Cell value="Q" />
                       <Cell value="T" />
                     </div>
                     <p className="text-sm text-gray-500">
@@ -83,14 +83,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
                     </p>
 
                     <div className="flex justify-center mb-1 mt-4">
-                      <Cell value="V" />
+                      <Cell value="M" />
                       <Cell value="A" />
                       <Cell value="G" />
-                      <Cell value="U" status="absent" />
+                      <Cell value="V" status="absent" />
                       <Cell value="E" />
                     </div>
                     <p className="text-sm text-gray-500">
-                      The residue U is not in the peptide in any spot.
+                      The residue V is not in the peptide in any position.
                     </p>
                   </div>
                 </div>
