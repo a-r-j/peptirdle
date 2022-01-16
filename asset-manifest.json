@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/peptirdle/static/css/main.94c19473.css",
-    "main.js": "/peptirdle/static/js/main.6930a366.js",
+    "main.js": "/peptirdle/static/js/main.12b92f6d.js",
     "static/js/787.50686617.chunk.js": "/peptirdle/static/js/787.50686617.chunk.js",
     "index.html": "/peptirdle/index.html",
     "main.94c19473.css.map": "/peptirdle/static/css/main.94c19473.css.map",
-    "main.6930a366.js.map": "/peptirdle/static/js/main.6930a366.js.map",
+    "main.12b92f6d.js.map": "/peptirdle/static/js/main.12b92f6d.js.map",
     "787.50686617.chunk.js.map": "/peptirdle/static/js/787.50686617.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.94c19473.css",
-    "static/js/main.6930a366.js"
+    "static/js/main.12b92f6d.js"
   ]
 }
