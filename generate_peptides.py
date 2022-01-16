@@ -19,7 +19,6 @@ def main():
     print(len(words))
 
     textfile = open("validGuesses.ts", "w")
-    #words = random.sample(words, 10000)
     textfile.write("export const VALIDGUESSES = [" + "\n")
     for w in words:
         textfile.write("'" + w + "',\n")
@@ -34,6 +33,6 @@ def main():
         textfile.write("'" + w + "',\n")
     textfile.write("];" + "\n")
     textfile.close()
-    
+
 if __name__ == "__main__":
     main()
